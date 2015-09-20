@@ -1,0 +1,38 @@
+{
+  "name": "osascript-promise",
+  "version": "1.0.0",
+  "description": "Execute Applescript through Node via Promises",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Ross Zurowski",
+    "email": "ross@rosszurowski.com",
+    "url": "https://github.com/rosszurowski"
+  },
+  "dependencies": {
+    "any-promise": "^0.1.0",
+    "node-osascript": "^1.0.2"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.2.0"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "promise,",
+    "apple,",
+    "script,",
+    "osascript,",
+    "applescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rosszurowski/osascript-promise.git"
+  },
+  "homepage": "https://github.com/rosszurowski/osascript-promise",
+  "bugs": {
+    "url": "https://github.com/rosszurowski/osascript-promise/issues"
+  }
+}
