@@ -19,8 +19,27 @@ Works using [any-promise](https://github.com/kevinbeaty/any-promise), so native 
 
 [![NPM](https://nodei.co/npm/osascript-promise.png)](https://www.npmjs.com/package/osascript-promise)
 
+This promisifies the `execute` method from [node-osascript](https://github.com/FWeinb/node-osascript).
 
+#### `osascript(command[, variables])`
 
+Pass your Applescript in via the `command` variable. Multiline scripts work well using the [ES6 template string](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/template_strings) syntax:
+
+```javascript
+osascript(`
+	tell application "Safari"
+		activate
+		open location "http://example.com"
+	end tell
+`).then(() => console.log('Success!'))
+```
+
+Applescript variables can be passed to the script as an object in the second argument:
+
+```javascript
+osascript('display dialog message', { message: 'Hello from Node' })
+	.then(() => console.log('Success!'))
+```
 
 ## License
 
