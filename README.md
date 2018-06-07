@@ -2,7 +2,7 @@
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-Execute Applescript from Node via Promises. A wrapper around [node-osascript](https://github.com/FWeinb/node-osascript) by [@fweinb](https://github.com/FWeinb). Pairs well with [tj/co](https://github.com/tj/co).
+Execute Applescript from Node via Promises. A wrapper around [node-osascript](https://github.com/FWeinb/node-osascript) by [@fweinb](https://github.com/FWeinb). Pairs well with [`await` and `async`](https://ponyfoo.com/articles/understanding-javascript-async-await).
 
 ```javascript
 var osascript = require('osascript-promise')
